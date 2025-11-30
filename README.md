@@ -8,6 +8,7 @@ This is a modern Full-Stack application designed to manage Gstore's job vacancie
 The project is deployed and fully functional. You can access it here:
 
 -Frontend (Vercel): [https://gstore-career.vercel.app](https://gstore-career.vercel.app/)
+
 -Admin Access: Click the lock icon in the footer or append /admin to the frontend URL.
 
 The project consists of two main parts:
