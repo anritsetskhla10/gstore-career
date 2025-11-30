@@ -1,0 +1,26 @@
+--- Dependencies ---
+
+/node_modules
+/client/node_modules
+/server/node_modules
+
+--- Build Outputs ---
+
+/client/dist
+/server/dist
+
+--- Environment Variables & Secrets ---
+
+.env
+/server/.env
+
+--- Database & Prisma ---
+
+/server/prisma/.db
+/server/prisma/.db-journal
+/server/uploads/
+
+--- IDE Files ---
+
+.vscode
+.idea
