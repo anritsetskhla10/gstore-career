@@ -50,25 +50,24 @@ Vacancy Management:
 📂 Project Structure
 
 The project uses a Monorepo structure (Frontend and Backend together):
-gstore-career/
-├── client/                 # React Frontend Application
-│   ├── src/
-│   │   ├── api/            # API Layer
-│   │   │   ├── hooks/      # Custom React Query Hooks (useVacancies, useApplications)
-│   │   │   └── services/   # Pure Axios Services (API calls separated from UI)
-│   │   ├── components/     # Reusable UI Components (Header, Modal, Card)
-│   │   ├── pages/          # Page Views (HomePage, AdminPage)
-│   │   └── types/          # TypeScript Interfaces
-│   └── ...
-└── server/                 # Node.js Backend Application
-    ├── prisma/             # Database Schema & Migrations
-    ├── src/
-    │   ├── config/         # DB Connection
-    │   ├── controllers/    # Request/Response Logic
-    │   ├── middleware/     # File Upload Logic
-    │   ├── routes/         # API Route Definitions
-    │   └── services/       # Business Logic
-    └── uploads/            # Temporary storage for Resume files
+
+    gstore-career/
+    ├── client/                 # Frontend (React + Vite)
+    │   ├── src
+    │   │   ├── api/            # API logic (Hooks & Services)
+    │   │   ├── components/     # Reusable UI Components
+    │   │   ├── pages/          # Page Views (Home, Admin, Details)
+    │   │   └── types/          # TypeScript Interfaces
+    │   └── ...
+    └── server/                 # Backend (Node.js + Express)
+        ├── prisma/             # Database Schema & Migrations
+        ├── src/
+        │   ├── config/         # DB Connection
+        │   ├── controllers/    # Request/Response Logic
+        │   ├── middleware/     # File Upload Logic
+        │   ├── routes/         # API Endpoints
+        │   └── services/       # Business Logic
+        └── uploads/            # Temporary Resume Storage
 
 
 
